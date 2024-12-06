@@ -1,0 +1,3 @@
+# Mutable Field in Seemingly Immutable Class
+
+This repository demonstrates a common error in Scala: using a mutable field (`_value`) within a class that is intended to be immutable.  The code appears immutable at first glance due to the use of a `val` for the name, but the internal `_value` is mutable. This can cause unintended side effects and make debugging harder. The solution showcases a better approach with truly immutable design.
